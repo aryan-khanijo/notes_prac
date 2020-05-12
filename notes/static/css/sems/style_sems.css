@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.row{
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+html{
+    font-family: Lobster;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    
+}
+
+/**********************/
+/*******header*********/
+/**********************/
+
+header{
+    margin-top: 50px;
+}
+
+h1{
+    text-align: center;
+    color: #555;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    font-size: 220%;
+    font-weight: 300;
+    font-family: "iceberg";
+    text-transform: capitalize;
+}
+
+h1:after {
+    display: block;
+    height: 4px;
+    background-color: rgb(255, 118, 0);
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.box{
+    margin-left: 10px;
+    width: 24%;
+    -webkit-box-shadow: 0px 20px 20px #c1c1c1;
+    box-shadow: 0px 20px 20px #c1c1c1;
+    -webkit-transition: -webkit-box-shadow 0.2s;
+    transition: -webkit-box-shadow 0.2s;
+    transition: box-shadow 0.2s;
+    transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+}
+
+.box:hover{
+    -webkit-box-shadow: 0px 0px 0px #c1c1c1;
+    box-shadow: 0px 0px 0px #c1c1c1;
+}
+
+h2{
+    text-align: center;
+    color: #555;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    font-size: 180%;
+    font-weight: 100;
+    font-family: iceberg;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+}
+
+h3{
+    text-align: center;
+    color: #ff7600;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    font-size: 150%;
+    font-weight: 300;
+    font-family: iceberg;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+.desc p{
+    color: #555;
+    text-align: center;
+    padding: 20px;
+    font-family: shadows into light;
+}

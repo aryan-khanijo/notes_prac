@@ -1,0 +1,14 @@
+{% extends 'Semester/sem-layout.html' %}
+
+{% block title %} {% endblock %}
+
+{% block content %}
+
+    <h2>Upload</h2>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name='notes'>
+        <button type="submit" > Upload notes</button>
+    </form>
+
+{% endblock %}

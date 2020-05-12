@@ -1,0 +1,171 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>notes_hub</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="{% static 'css/main-site/grid.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/main-site/style_hub.css' %}">
+        <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/sems/arcss.css' %}"> -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/main-site/queries_hub.css' %}">
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Germania+One|Iceberg|Lobster|Pacifico|Shadows+Into+Light" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+
+    </head>
+    <body style="overflow: hidden;">
+        <header>
+            <div class="row">
+                <img src="{% static 'img/cartoon-notes-pad-black-white-line-retro-style-vector-available-37027570.jpg' %}" alt="random" class="note-pic">
+                <ul class="nav" id="myTopnav">
+                    <li><a href="#" class="js--scroll-to-first-year">First Year</a></li>
+                    <li><a href="#" class="js--scroll-to-second-year">Second Year</a></li>
+                    <li><a href="#" class="js--scroll-to-third-year">Third Year</a></li>
+                    {% if user.is_authenticated %}
+                        <li><a href="#" class="Acc"> Welcome, {{user.get_username}} </a></li>
+                        <li><a href="logout" class="Acc">Logout</a></li>
+                    {% else %}
+                        <li><a href="login" class="User-acc">SignUp / Login</a></li>
+                    {% endif %}
+                </ul>
+                <div class="content">
+                    <h1>You can always edit a bad page<br><span class="but">but</span><br><span class="line2">You can't edit a blank page.</span></h1>
+                    <p>Get your notes from here.</p>
+                    <div class="btn js--scroll-to-main-sec">
+                        <!-- <a href="#">Click Me!</a> -->
+                    <a href="#"><ion-icon name="arrow-down"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <section class="main-sec js--main-sec">
+            <div class="row">
+                <h2>Ready to take your notes ?</h2>
+            </div>
+            <div class="row  js--first-year">
+                <h3>1. First Year ( BCA )</h3>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-2 box">
+                    <h4>1st Semester</h4>
+                    <div class="subjects">
+                        <ul>
+                            <li><a href="maths1" target="_blank">Mathematics - I</a></li>
+                            <li><a href="tc" target="_blank">Technical Communication</a></li>
+                            <li><a href="c" target="_blank">Programming Language using C</a></li>
+                            <li><a href="fit" target="_blank">Introduction to Computers & IT</a></li>
+                            <li><a href="phy" target="_blank">Physics</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col span-1-of-2 box">
+                    <h4>2nd semester</h4>
+                    <div class="subjects">
+                        <ul>
+                            <li><a href="#" target="_blank">Mathematics – II</a></li>
+                            <li><a href="#" target="_blank">Principles of Management</a></li>
+                            <li><a href="#" target="_blank">Digital Electronics</a></li>
+                            <li><a href="#" target="_blank">Data Structure Using C</a></li>
+                            <li><a href="#" target="_blank">Database Management System</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+            <div class="row js--second-year">
+                <h3>2. Second Year ( BCA )</h3>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-2 box">
+                    <h4>3rd Semester</h4>
+                    <div class="subjects">
+                        <ul>
+                            <li><a href="#" target="_blank">Mathematics – III</a></li>
+                            <li><a href="#" target="_blank">Computer Architecture</a></li>
+                            <li><a href="#" target="_blank">Front End Design Tool VB.Net</a></li>
+                            <li><a href="#" target="_blank">Principles of Accounting</a></li>
+                            <li><a href="#" target="_blank">OOP using C++.</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col span-1-of-2 box">
+                    <h4>4th semester</h4>
+                    <div class="subjects">
+                        <ul>
+                            <li><a href="#" target="_blank">Mathematics – IV</a></li>
+                            <li><a href="#" target="_blank">Web Technologies</a></li>
+                            <li><a href="#" target="_blank">Java Programming</a></li>
+                            <li><a href="#" target="_blank">Software Engineering</a></li>
+                            <li><a href="#" target="_blank">Computer Networks</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row js--third-year">
+                <h3>3. Third Year ( BCA )</h3>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-2 box">
+                    <h4>5th Semester</h4>
+                    <div class="subjects">
+                        <ul>
+                            <li><a href="#" target="_blank">Operating System</a></li>
+                            <li><a href="#" target="_blank">Computer Graphics</a></li>
+                            <li><a href="#" target="_blank">E- Commerce</a></li>
+                            <li><a href="#" target="_blank">Software Engineering</a></li>
+                            <li><a href="#" target="_blank">Computer Networks</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col span-1-of-2 box">
+                    <h4>6th semester</h4>
+                    <div class="subjects">
+                        <ul>
+                            <li><a href="#" target="_blank">Data Ware Housing Data Mining</a></li>
+                            <li><a href="#" target="_blank">Mobile Computing</a></li>
+                            <li><a href="#" target="_blank">Linux Environment</a></li>
+                            <li><a href="#" target="_blank">subject 4</a></li>
+                            <li><a href="#" target="_blank">subject 5</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="row">
+                <div class="icons">
+                    <p class="social-text">Connect with me on :</p>
+                    <ul class="social-links">
+                        <li><a href="#" class="linkedin"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                        <li><a href="#" class="google"><ion-icon name="logo-googleplus"></ion-icon></a></li>
+                        <li><a href="#" class="insta"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href="#" class="fb"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="foot-text">
+                    <p>Build with <ion-icon name="heart"></ion-icon> by Pranjal Bankawat & Aryan Khanijo</p>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="{% static 'js/jquery_hub.js' %}"></script>
+        <script>
+            function myFunction() {
+                var navbar = document.getElementById("myTopnav");
+                if (navbar.className === "nav") {
+                    navbar.className += " responsive";
+                } else {
+                    navbar.className = "nav";
+                  }
+            }
+            
+        </script>        
+    </body>
+</html>
